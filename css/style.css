@@ -69,6 +69,10 @@ header {
     position: relative;
 }
 
+.owl-prev span {
+    cursor: pointer;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -200,7 +204,7 @@ main {
 /* Секция HOME*/
 
 .home__img {
-    background-image: url("/img/Фон.png");
+    background-image: url("../img/Фон.png");
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -231,7 +235,7 @@ main {
 
 .home__info::before {
     content: "";
-    background-image: url("/img/icon_ford.png");
+    background-image: url("../img/icon_ford.png");
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
@@ -362,7 +366,7 @@ main {
 }
 
 .info__img {
-    background-image: url("/img/IMG_0504.png");
+    background-image: url("../img/IMG_0504.png");
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -403,23 +407,23 @@ main {
 
 .info__item:nth-child(1) .info__descr::before {
     content: "";
-    background-image: url("/img/Фигура_3.png");
+    background-image: url("../img/Фигура_3.png");
 }
 
 .info__item:nth-child(2) .info__descr::before {
     content: "";
-    background-image: url("/img/Фигура_6.png");
+    background-image: url("../img/Фигура_6.png");
     margin-right: 25px;
 }
 
 .info__item:nth-child(3) .info__descr::before {
     content: "";
-    background-image: url("/img/Фигура_5.png");
+    background-image: url("../img/Фигура_5.png");
 }
 
 .info__item:nth-child(4) .info__descr::before {
     content: "";
-    background-image: url("/img/Фигура_4.png");
+    background-image: url("../img/Фигура_4.png");
 }
 
 .info__descr-list {
@@ -470,11 +474,11 @@ main {
 }
 
 .ico-1::before {
-    background-image: url("/img/Фигура_7.png");
+    background-image: url("../img/Фигура_7.png");
 }
 
 .ico-2::before {
-    background-image: url("/img/Фигура_8.png");
+    background-image: url("../img/Фигура_8.png");
 }
 
 .about__right {
@@ -563,7 +567,7 @@ main {
 }
 
 .control__img {
-    background-image: url("/img/control-fon.png");
+    background-image: url("../img/control-fon.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -602,7 +606,8 @@ main {
 
 .control__item::before{
     content: "";
-    background-image: url("/img/check-circle-regular.svg");
+    background-image: url("../img/check-circle-regular.svg");
+    background-repeat: no-repeat;
     display: block;
     width: 26px;
     height: 26px;
@@ -672,7 +677,7 @@ main {
     display: block;
     top: 0;
     left: 0;
-    background-image: url("/img/zahnarzt-tuebingen-team.png");
+    background-image: url("../img/zahnarzt-tuebingen-team.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -703,6 +708,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 18px;
     color: #1bac1f;
     height: 63px;
@@ -737,11 +743,305 @@ main {
 
 /*SECURETY*/
 .security .control__img {
-    background-image: url("/img/Фигура_10.png");
+    background-image: url("../img/Фигура_10.png");
 }
 
 .security .about__btn{
     margin-bottom: 75px;
+}
+/*nutrition*/
+.nutrition .container{
+    height: 804px;
+}
+
+.nutrition .row {
+    flex-direction: row;
+}
+
+.nutrition .control__img {
+    background-image: url("../img/iStock-515854732.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.nutrition .control__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.nutrition .control__item {
+    flex-direction: column;
+    text-align: center;
+    width: 160px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.nutrition .control__item:before {
+    background-repeat: no-repeat;
+    width: 74px;
+    height: 74px;
+    display: flex;
+    margin-right: 0;
+}
+
+.nutrition .control__item:nth-child(1):before {
+    background-image: url("../img/figura_11.png");
+}
+
+.nutrition .control__item:nth-child(2):before {
+    background-image: url("../img/figura_12.png");
+}
+
+.nutrition .control__item:nth-child(3):before {
+    background-image: url("../img/figura_13.png");
+}
+
+.nutrition .control__item:nth-child(4):before {
+    background-image: url("../img/figura_14.png");
+}
+
+/**/
+
+/*routine*/
+.routine {
+    margin-top: 0;
+}
+
+.routine .container{
+    height: 656px;
+}
+
+.routine .row {
+    flex-direction: row;
+}
+
+.routine .control__img {
+    background-image: url("../img/figura_16.png");
+    
+}
+
+.routine .control__item {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.routine .about__btn {
+    background: unset;
+    border: 3px solid #00bd00;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 47px 10px rgba(67, 116, 42, 0.26);
+    color: #00bd00;
+    font-weight: 600;
+    width: 280px;
+    height: 28px;
+}
+
+.routine__modal {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    background: #ffffff;
+    z-index: 98;
+    border-radius: 15px;
+    box-shadow: 0 0 38px rgba(135, 200, 57, 0.1);
+}
+
+.routine__modal-tittle {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.routine__modal-tittle::before {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: url("../img/clock.png");
+    width: 31px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.routine__modal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.routine__modal-iteam {
+    font-weight: 600;
+}
+
+.routine__modal-iteam span{
+    color: #00a404;
+    font-weight: 700;
+}
+
+.modal__close {
+    position: absolute;
+    background-image: url("../img/close.png");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    top: 16px;
+    right: 18px;
+    z-index: 99;
+}
+/**/
+
+/*shipping*/
+
+.shipping {
+    height: 526px;
+}
+
+.shipping .control__img {
+    background-image: url("../img/moscow-evas-min-2.png");
+}
+
+.shipping__tittle {
+    font-size: 20px;
+}
+
+.shipping__tittle span {
+    text-decoration: underline; 
+}
+
+.shipping__tittle::before {
+    content: "";
+    background-image: url("/img/Слой_5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 260px;
+}
+
+/**/
+
+/*calculator*/
+.calculator {
+    height: 884px;
+    background-color: #e0ffe4;
+}
+ 
+/**/
+
+/*reviews*/
+.reviews {
+    margin-top: 0;
+    height: 965px;
+    background-color: #e0ffe4;
+}
+
+.reviews .row {
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews .control__tittle {
+    text-align: center;
+    color: #3b3b3b;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.reviews .control__item::before{
+    display: none;
+}
+
+.reviews .control__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews .control__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.video__tittle {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.video__src {
+    width: 100%;
+}
+/**/
+
+/*map*/
+.map .row {
+    width: 100%;
+}
+/**/
+
+/*footer*/
+    footer {
+        height: 214px;
+        background-color: #474747;
+    }
+
+    footer .container {
+        height: 100%;
+    }
+
+    footer .row {
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__text {
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 600;
+        border-bottom: 1px solid #ffffff;
+    }
+/**/
+
+/*accommodation*/
+    .accommodation__img {
+        display: none;
+    }
+
+/**/
+
+/*calculator*/
+.calculator__list {
+    margin-top: 90px;
+    border: 2px dashed #94d673;
+    border-radius: 15px;
+    box-shadow: 0 0 139px rgba(60, 90, 25, 0.21);
+    overflow: hidden;
+}
+
+.calculator__item:nth-child(2) {
+    display: none;
+}
+
+.calculator__item:nth-child(1) {
+    background-color: #f4fff5;
+    height: 703px;
+}
+
+.calculator__tittle {
+    font-size: 20px;
+    text-align: center;
+}
+
+.calculator__tittle span{
+    color: #00a404;
+    
 }
 /**/
 
@@ -801,7 +1101,7 @@ main {
     }
 
     /*PHOTO*/
-    .owl-carousel .owl-nav.disabled {
+    .photo .owl-carousel .owl-nav.disabled {
         display: block;
         position: absolute;
         width: 100%;
@@ -856,6 +1156,82 @@ main {
         background-position: 50% 0;
     }
     /**/
+
+    /*nutrition*/
+    .nutrition .row {
+        flex-direction: column;
+    }
+    .nutrition .control__tittle {
+        height: 250px;
+    }
+    /**/
+
+    /*routine*/
+    .routine .about__btn {
+        width: 360px;
+    }
+
+    .routine__modal-iteam {
+        margin-right: 45px;
+    }
+
+    .routine__modal {
+        height: 520px;
+    }
+    
+    /**/
+    
+    /*shipping*/
+
+    .shipping .row {
+        height: 526px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shipping__tittle {
+        font-size: 36px;
+        width: 431px;
+    }
+
+    /**/
+
+    /*reviews*/
+
+    .reviews {
+        height: 562px;
+        margin-top: 0;
+    }
+
+    .reviews .control__list {
+        flex-direction: row;
+
+    }
+
+    .reviews .control__item {
+        margin: 10px;
+    }
+
+    /**/
+
+    /*map*/
+    .map {
+        margin-top: 0;
+        height: 759px;
+        overflow: hidden;
+    }
+
+    /*footer*/
+    footer .row {
+        height: 100%;
+        width: 90%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /**/
+
+    
 }
 
 @media (min-width: 1024px){
@@ -973,7 +1349,7 @@ main {
         margin-top: 100px;
     }
 
-    .owl-carousel.owl-loaded {
+    .photo .owl-carousel.owl-loaded {
         display: none;
     }
 
@@ -1001,7 +1377,7 @@ main {
     /**/
 
     /*TEAM*/
-    .owl-carousel.owl-loaded {
+    .team .owl-carousel.owl-loaded {
         display: block;
     }
 
@@ -1011,6 +1387,88 @@ main {
 
     /**/
 
+    /*NUTRITION*/
+    .nutrition .control__item {
+        margin-right: 50px;
+    }
+
+    .nutrition .row {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .nutrition .control__tittle {
+        height: 250px;
+    }
+
+    .nutrition .control__list {
+        justify-content: flex-start;
+    }
+    /**/
+
+    /*routine*/
+
+    .routine .row {
+        flex-direction: column;
+    }
+
+    .routine .control__tittle {
+        margin-top: 70px;
+        width: 597px;
+    }
+
+    
+
+    .routine__modal {
+        width: 945px;
+    }
+
+    /**/
+
+    /*shipping*/
+
+    .shipping__tittle {
+        font-size: 36px;
+    }
+
+    .shipping__tittle::before {
+        display: none;
+    }
+
+    .shipping__bass {
+        background-image: url("/img/Слой_5.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 400px;
+        width: 400px;
+    }
+
+    /**/
+
+    /*accommodation*/
+
+    .accommodation {
+        overflow: hidden;
+    }
+
+    .accommodation__text {
+        font-size: 20px;
+        font-weight: 600;
+        width: 421px;
+        margin-bottom: 10px;
+    }
+
+    .accommodation__img {
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 600px;
+        top: 50px;
+        height: 545px;
+        width: 504px;
+        display: block;
+
+    }
 }
 
 @media (min-width:1300px) {
@@ -1144,7 +1602,7 @@ main {
     }
 
     .home__fon-image {
-        background-image: url("/img/faml.png");
+        background-image: url("../img/faml.png");
         background-repeat: no-repeat;
         position: absolute;
         bottom: 0;
@@ -1225,7 +1683,7 @@ main {
     }
 
     .photo__list {
-        width: 100%;
+        max-width: 1920px;
         align-items: flex-start;
         justify-content: flex-start;
     }
@@ -1294,7 +1752,7 @@ main {
         top: -240px;
         right: -270px;
         display: block;
-        background-image: url("/img/5a28ba769827e0.98354745151261861462321.png");
+        background-image: url("../img/5a28ba769827e0.98354745151261861462321.png");
         width: 444px;
         height: 407px;
         z-index: 97;
@@ -1305,7 +1763,7 @@ main {
         top: 180px;
         right: -15px;
         display: block;
-        background-image: url("/img/5a28ba769827e0.9835474515126186146232.png");
+        background-image: url("../img/5a28ba769827e0.9835474515126186146232.png");
         background-repeat: no-repeat;
         width: 444px;
         height: 407px;
@@ -1317,7 +1775,7 @@ main {
         top: 120px;
         left: -65px;
         display: block;
-        background-image: url("/img/5a28ba769827e0.9835474515126186146232.png");
+        background-image: url("../img/5a28ba769827e0.9835474515126186146232.png");
         background-repeat: no-repeat;
         background-size: cover;
         width: 51px;
@@ -1330,7 +1788,7 @@ main {
         top: -100px;
         left: -250px;
         display: block;
-        background-image: url("/img/2-layers.png");
+        background-image: url("../img/2-layers.png");
         background-repeat: no-repeat;
         background-size: cover;
         width: 277px;
@@ -1345,6 +1803,7 @@ main {
 
     .team__info {
         margin-top: 90px;
+        z-index: 95;
     }
 
     .team .owl-carousel {
@@ -1355,7 +1814,7 @@ main {
         top: 43%;
     }
 
-    /**/
+    /*SECURITY*/
 
     .security .control__img {
         background-position: 30% 0;
@@ -1365,5 +1824,75 @@ main {
     .security .control__tittle {
         margin-top: 64px;
     }
-    
+
+    /*NUTRITION*/
+
+    .nutrition .control__tittle{
+        width: 641px;
+        height: 123px;
+    }
+
+    .nutrition .row {
+        justify-content: flex-start;
+    }
+
+    /*routine*/
+    .routine .control__list {
+        margin-bottom: 0;
+    }
+
+    .routine .about__btn {
+        margin-top: 0;
+    }
+
+    .routine .control__tittle {
+        margin-bottom: 0;
+    }
+
+    .routine__modal {
+        top: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .routine__modal-list {
+        width: 780px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .routine__modal-tittle {
+        width: 780px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .routine__modal-iteam{
+        font-size: 20px;
+    }
+
+    /*SHIPINING*/
+    .shipping__bass {
+        
+        width: 501px;
+    }
+
+    /*map*/
+
+    .map .row {
+        width: 100%;
+    }
+
+    /**/
+
+    /*footer*/
+    footer .row {
+        height: 100%;
+        width: 1137px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /**/
 }

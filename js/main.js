@@ -18,3 +18,16 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+var routineBtn = document.getElementById('routine-btn');
+var modalClose = document.getElementById('modal-close');
+var routineModal = document.getElementById('routine-modal');
+
+routineBtn.onclick = function(e){
+    e.preventDefault();
+    routineModal.classList.remove("visually-hidden");
+};
+
+modalClose.onclick = function(){
+    routineModal.classList.add("visually-hidden");
+}
