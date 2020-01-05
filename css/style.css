@@ -71,6 +71,7 @@ header {
 
 .container {
     display: flex;
+    justify-content: center;
     width: 100%;
     z-index: 95;
 }
@@ -431,6 +432,317 @@ main {
 }
 /**/
 
+/*ABOUT*/
+.about {
+    margin-top: 50px;
+}
+
+.about .container {
+    justify-content: center;
+}
+
+.about .row {
+    width: 90%;
+}
+
+.about__tittle {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.ico-1::before, .ico-2::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 55px;
+    height: 54px;
+    margin-right: 10px;
+}
+
+.about__descr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ico-1::before {
+    background-image: url("/img/Фигура_7.png");
+}
+
+.ico-2::before {
+    background-image: url("/img/Фигура_8.png");
+}
+
+.about__right {
+    width: 100%;
+    height: 366px;
+    background-color: #afeab7;
+    box-shadow: 0 0 38px rgba(135, 200, 57, 0.1);
+    border-radius: 10px;
+}
+
+.about__btn {
+    box-shadow: 0 0 29px rgba(255, 107, 76, 0.59);
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #ff684a 0%, #ff8f80 100%);
+    width: 64px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/**/
+
+/*PHOTO*/
+.photo {
+    width: 100%;
+}
+
+.photo .row {
+    justify-content: center;
+}
+
+.photo__list {
+    display: none;
+}
+
+.photo__item {
+    overflow: hidden;
+}
+
+.photo__img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -5px;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+}
+
+.owl-prev {
+    position: absolute;
+    left: 10px;
+}
+
+.owl-next{
+    position: absolute;
+    right: 10px;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.owl-carousel {
+    position: relative;
+}
+/**/
+
+/*CONTROL*/
+
+.control {
+    margin-top: 50px;
+    position: relative;
+}
+
+.control__img {
+    background-image: url("/img/control-fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+.control .row{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.control__tittle {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.control__tittle span {
+    color: #00a404;
+}
+
+.control__list {
+    margin-bottom: 30px;
+}
+
+.control__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.control__item::before{
+    content: "";
+    background-image: url("/img/check-circle-regular.svg");
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+/**/
+
+/*STAFF*/
+.staff .container{
+    margin-top: 50px;
+}
+
+.staff .row {
+    width: 90%;
+    justify-content: center;
+}
+
+.staff__item {
+    margin-top: 110px;
+    width: 270px;
+    height: 220px;
+    background-color: #e0ffe4;
+    border: 8px solid #ffffff;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 38px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staff__img {
+    margin-top: -80px;
+}
+
+.staff__tittle {
+    font-size: 20px;
+}
+
+.staff__tittle span{
+    color: #00a404;
+}
+
+.staff__text {
+    font-size: 24px;
+    text-align: center;
+}
+
+.staff__img-1, .staff__img-2, 
+.staff__img-3, .staff__img-4 {
+    display: none;
+}
+/**/
+
+/*TEAM*/
+.team {
+    position: relative;
+}
+
+.team .row {
+    width: 90%;
+}
+
+.team__img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background-image: url("/img/zahnarzt-tuebingen-team.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 931px;
+}
+
+.team__info {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    color: #3b3b3b;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.team__info span {
+    color: #00a404;
+}
+
+.owl-carousel .owl-item img {
+    background-size: cover;
+}
+
+.team__descr {
+    background-color: #e0ffe4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #1bac1f;
+    height: 63px;
+    font-weight: 700;
+}
+
+.team__tittle {
+    height: 202px;
+    background: #ffffff;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 0 38px rgba(135, 200, 57, 0.1);
+    border: 1px solid #e0ffe4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 38px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.team__tittle span {
+    font-weight: 700;
+    
+}
+
+
+/**/
+
+/*SECURETY*/
+.security .control__img {
+    background-image: url("/img/Фигура_10.png");
+}
+
+.security .about__btn{
+    margin-bottom: 75px;
+}
 /**/
 
 @media (min-width:768px) {
@@ -487,6 +799,63 @@ main {
     .info__descr-item {
         width: 200px;
     }
+
+    /*PHOTO*/
+    .owl-carousel .owl-nav.disabled {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 40%;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .owl-prev, .owl-next {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .owl-prev span, .owl-next span {
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+    }
+    /**/
+
+    /*CONTROL*/
+    .control__tittle {
+        width: 520px;
+        font-size: 36px;
+    }
+
+    /**/
+
+    /*STAFF*/
+    .staff__tittle {
+        width: 751px;
+        font-size: 36px;
+    }
+
+    .staff__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /**/
+
+    /*SECURETY*/
+    .security .control__img {
+        background-position: 50% 0;
+    }
+    /**/
 }
 
 @media (min-width: 1024px){
@@ -565,6 +934,83 @@ main {
         margin-bottom: 10px;
     }
     /**/
+
+    /*ABOUT*/
+    .about .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .ico-1::before,.ico-2::before {
+        background-size: contain;
+        width: 130px;
+        height: 70px;
+        margin-right: 35px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about__left {
+        width: 40%;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .about__right {
+        width: 530px;
+    }
+
+    .about__btn {
+        width: 360px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    /**/
+
+    /*PHOTO*/
+
+    .photo {
+        margin-top: 100px;
+    }
+
+    .owl-carousel.owl-loaded {
+        display: none;
+    }
+
+    .photo__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .photo__item {
+        width: 320px;
+        height: 260px;
+        overflow: hidden;
+    }
+
+    .photo__img {
+        background-position: center;
+        width: 391px;
+        height: 260px;
+    }
+
+    /**/
+
+    /*TEAM*/
+    .owl-carousel.owl-loaded {
+        display: block;
+    }
+
+    .owl-dots {
+        display: block;
+    }
+
+    /**/
+
 }
 
 @media (min-width:1300px) {
@@ -632,6 +1078,7 @@ main {
     .home .row {
         display: flex;
         align-items: flex-start;
+        width: 1137px;
     }
 
     .home__tittle {
@@ -736,7 +1183,187 @@ main {
         width: 140px;
         
     }
+
+    .info__img {
+        opacity: unset;
+        background-position: -100px 0;
+    }
     /**/
 
+    /*ABOUT*/
+    .about .row {
+        width: 1137px;
+    }
+
+    .about__descr {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 600;
+        width: 340px;
+    }
+
+    .about__right {
+        width: 651px;
+        
+    }
+
+    .about__btn {
+        width: 360px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+
+    /**/
+
+    /*PHOTO*/
+
+    .photo .row {
+        width: 100%;
+    }
+
+    .photo__list {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .photo__item {
+       width: 20%;
+       
+    }
+
+    /*CONTROL*/
+    .control {
+        margin-top: 0;
+    }
+
+    .control .row {
+        width: 1137px;
+    }
+
+    .control__tittle {
+        margin-top: 137px;
+    }
+
+    .control__item {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    /**/
+
+    /*STAFF*/
+    .staff {
+        position: relative;
+    }
+
+    .staff .container {
+        overflow: hidden;
+    }
+
+    .staff .row {
+        width: 1137px;
+        justify-content: flex-start;
+    }
+
+    .staff__list {
+        justify-content: flex-start;
+    }
+
+    .staff__item {
+        position: relative;
+        width: 360px;
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+    .staff__tittle {
+        margin-bottom: 120px;
+    }
+
+    .staff__text {
+        font-weight: 600;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .staff__img-1 {
+        position: absolute;
+        top: -240px;
+        right: -270px;
+        display: block;
+        background-image: url("/img/5a28ba769827e0.98354745151261861462321.png");
+        width: 444px;
+        height: 407px;
+        z-index: 97;
+    }
+
+    .staff__img-2 {
+        position: absolute;
+        top: 180px;
+        right: -15px;
+        display: block;
+        background-image: url("/img/5a28ba769827e0.9835474515126186146232.png");
+        background-repeat: no-repeat;
+        width: 444px;
+        height: 407px;
+        z-index: 97;
+    }
+
+    .staff__img-4 {
+        position: absolute;
+        top: 120px;
+        left: -65px;
+        display: block;
+        background-image: url("/img/5a28ba769827e0.9835474515126186146232.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 51px;
+        height: 51px;
+        z-index: 97;
+    }
+
+    .staff__img-3 {
+        position: absolute;
+        top: -100px;
+        left: -250px;
+        display: block;
+        background-image: url("/img/2-layers.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 277px;
+        height: 260px;
+        z-index: 97;
+    }
+
+    /*TEAM*/
+    .team .row{
+        width: 1137px;
+    }
+
+    .team__info {
+        margin-top: 90px;
+    }
+
+    .team .owl-carousel {
+        margin-top: 80px;
+    }
+
+    .team .owl-nav {
+        top: 43%;
+    }
+
+    /**/
+
+    .security .control__img {
+        background-position: 30% 0;
+        height: 656px;
+    }
+
+    .security .control__tittle {
+        margin-top: 64px;
+    }
     
 }
