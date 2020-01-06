@@ -27,11 +27,10 @@
                     <ul class="navbar__list">
                         <li class="navbar__item"><a href="#" class="navbar__link">Галерея</a></li>
                         <li class="navbar__item"><a href="#" class="navbar__link">Контакты</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__btn">Лицензия</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__btn" id="lic-btn">Лицензия</a></li>
                         <li class="navbar__item"><a href="tel:+8 (800) 888-08-88" class="navbar__phone">8 (800) 888-08-88</a></li>
                     </ul>
                 </div>
-                <div class="navbar__modal"></div>
             </div>
         </div>
     </header>
@@ -42,7 +41,6 @@
             <div class="container">
                 <div class="home__img"></div>
                 <div class="row">
-                    
                     <h1 class="home__tittle">Пансионат для пожилых людей  в Москве и области
                     </h1>
                     <p class="home__descr">Проживание, питание и обслуживание пожилых людей <span> по системе «Всё включено» 
@@ -58,7 +56,32 @@
                     </div>
                     <div class="home__fon-image"></div>
                 </div>
-                
+                <div class="home__moadal visually-hidden" id="home-modal">
+                    <div class="home__close" id="home-close"></div>
+                    <div class="home__row">
+                        <h3 class="home__modal-tittle">Лицензии</h3>
+                        <div class="owl-carousel owl-theme">
+                            <div> <img src="img/lic7.png" alt="" class="home__modal-img"></div>
+                            <div><img src="img/lic6.png" alt="" class="home__modal-img"></div>
+                            <div> <img src="img/lic5.png" alt="" class="home__modal-img"> </div>
+                            <div>  <img src="img/lic4.png" alt="" class="home__modal-img"> </div>
+                            <div> <img src="img/lic3.png" alt="" class="home__modal-img"></div>
+                            <div>  <img src="img/lic2.png" alt="" class="home__modal-img"> </div>
+                            <div><img src="img/lic1.png" alt="" class="home__modal-img"></div>
+                            <div><img src="img/lic0.png" alt="" class="home__modal-img"></div>
+                        </div>
+                        <div class="home__modal-wrap">
+                            <img src="img/lic7.png" alt="" class="home__modal-img">
+                            <img src="img/lic6.png" alt="" class="home__modal-img">
+                            <img src="img/lic5.png" alt="" class="home__modal-img">
+                            <img src="img/lic4.png" alt="" class="home__modal-img">
+                            <img src="img/lic3.png" alt="" class="home__modal-img">
+                            <img src="img/lic2.png" alt="" class="home__modal-img">
+                            <img src="img/lic1.png" alt="" class="home__modal-img">
+                            <img src="img/lic0.png" alt="" class="home__modal-img">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="info">
@@ -129,7 +152,17 @@
                         <p class="about__descr ico-2">Уютные комнаты одно-, двух-, трех-, четырехместные комнаты с телевизорами</p>
                     </div>
                     <div class="about__right"></div>
-                    <a href="#" class="about__btn">записаться на экскурсию</a>
+                    <a href="#" class="about__btn" id="about-btn">записаться на экскурсию</a>
+                </div>
+                <div class="about__modal visually-hidden" id="about-modal">
+                    <div class="home__close" id="about-close"></div>
+                    <div class="about__row">
+                        <h3 class="about__modal-tittle">
+                            Укажите свой<br> номер телефона
+                        </h3>
+                        <input class="about__controll" type="text" name="" id="" placeholder="номер телефона">
+                        <a href="#" class="about__btn about__modal-btn">записаться на экскурсию</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -144,7 +177,7 @@
                         <div> <img src="img/foto/foto5.png" alt="" class="photo__img"> </div>
                         <div>  <img src="img/foto/foto6.png" alt="" class="photo__img"> </div>
                         <div><img src="img/foto/foto7.png" alt="" class="photo__img"></div>
-                      </div>
+                    </div>
                     <ul class="photo__list">
                         <li class="photo__item">
                             <img src="img/foto/foto1.png" alt="" class="photo__img">
@@ -429,8 +462,9 @@
                         <li class="control__item">Выписки (если есть) постояльца</li>
                     </ul>
                     <a href="#" class="about__btn" id="routine-btn">забронировать место</a>
+                    <img src="img/pasport.png" class="accommodation__img"></img>
                 </div>
-                <img src="img/pasport.png" class="accommodation__img"></img>
+                
             </div>
         </section>
         <section class="control shipping">
@@ -471,15 +505,15 @@
                     <h5 class="control__tittle">Отзывы</h5>
                     <ul class="control__list">
                         <li class="control__item">
-                            <video class="video__src" src="" poster="/img/video.png"></video>
+                            <video class="video__src" src="" poster="img/video.png"></video>
                             <p class="video__tittle">Иванова Клавдия Ивановна, 78 лет</p>
                         </li>
                         <li class="control__item">
-                            <video class="video__src" src="" poster="/img/video.png"></video>
+                            <video class="video__src" src="" poster="img/video.png"></video>
                             <p class="video__tittle">Иванова Клавдия Ивановна, 78 лет</p>
                         </li>
                         <li class="control__item">
-                            <video class="video__src" src="" poster="/img/video.png"></video>
+                            <video class="video__src" src="" poster="img/video.png"></video>
                             <p class="video__tittle">Иванова Клавдия Ивановна, 78 лет</p></li>
                     </ul>
                 </div>
